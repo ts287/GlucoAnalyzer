@@ -462,7 +462,9 @@ with col3:
 
 
 # FOOD SECTION
-st.subheader("🍽️ Food Around This Time")
+#st.subheader("🍽️ Food Around This Time")
+st.markdown("<h3 style='padding-top: 30px'>🍽️ Food Around This Time</h3>", unsafe_allow_html=True)
+
 
 if nearby_food.empty:
 
@@ -623,12 +625,15 @@ else:
 
 
 # AI AGENT / GENIE
-st.subheader("🤖 Ask any questions you have to the blood sugar analyzer agent")
+#st.subheader("🤖 Ask any questions you have to the blood sugar analyzer agent")
 
-st.write(
-    "Ask questions about your glucose, food, "
-    "and wearable data."
-)
+#st.write(
+    #"Ask questions about your glucose, food, "
+    #"and wearable data."
+#)
+st.markdown("<h3>🤖 Ask any questions you have to the GlucoAnalyzer agent</h3>", unsafe_allow_html=True)
+st.markdown("<p style='padding-bottom: 0px'>Try asking about what factors causes person 1's blood sugar to spike the most</p>", unsafe_allow_html=True)
+
 
 components.html(
     """
@@ -654,5 +659,8 @@ with st.expander("About GlucoAnalyzer"):
         "GlucoAnalyzer is a prototype for exploring "
         "wearable glucose, heart rate, temperature, "
         "and food data from the PhysioNet Big Ideas "
-        "Glycemic-Wearable dataset."
+        "Glycemic-Wearable dataset. None of the information"
+        " on this site is medical information and should "
+        "not be treated as such. Please see a physician "
+        "for medical advice."
     )
