@@ -1,0 +1,7 @@
+command: [
+  "streamlit", 
+  "run",
+  "app.py"
+]
+
+command: ["python", "src/app.py"]
