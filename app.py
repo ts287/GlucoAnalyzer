@@ -1,4 +1,5 @@
-import streamlit as st
+!pip install streamlitimport streamlit as st
+
 import pandas as pd
 import plotly.express as px
 from databricks.sdk import WorkspaceClient
@@ -642,7 +643,8 @@ components.html(
         width="100%"
         height="600"
         frameborder="0"
-        allow="clipboard-write">
+        allow="clipboard-write"
+        style='padding-top=-2'>
     </iframe>
     """,
     height=620,
